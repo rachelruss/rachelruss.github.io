@@ -1,0 +1,219 @@
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+
+/* ---------- Navigation ---------- */
+
+header {
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+
+/* ---------- Main ---------- */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+section {
+    padding: 100px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    padding: 120px 0;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 0 30px 0;
+}
+
+.hero p {
+    max-width: 750px;
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* ---------- Headings ---------- */
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+
+    background: #222;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button.secondary {
+    background: white;
+    color: #222;
+    border: 1px solid #222;
+}
+
+
+/* ---------- Research ---------- */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.research-card {
+    padding: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.research-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ---------- Education ---------- */
+
+.education,
+.certification {
+    margin-bottom: 35px;
+}
+
+.education p,
+.certification p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 30px;
+    color: #555;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+}
