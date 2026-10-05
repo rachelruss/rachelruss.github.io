@@ -52,7 +52,7 @@ nav {
 }
 
 .nav-links a {
-    color: #674ea7;
+    color: #000;
     text-decoration: none;
     font-size: 15px;
 }
@@ -92,6 +92,7 @@ h1 {
     font-size: 32px;
     line-height: 1.1;
     margin: 0 0 30px 0;
+    color: #674ea7;
 }
 
 .hero p {
@@ -126,8 +127,8 @@ h3 {
     display: inline-block;
     padding: 12px 22px;
 
-    background: #674ea7;
-    color: white;
+    background: white;
+    color: #222;
 
     text-decoration: none;
     border-radius: 5px;
@@ -287,4 +288,100 @@ footer {
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+
+
+/* =================================
+   Experience Section
+   ================================= */
+
+.experience-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.experience-section > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.experience-category {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.experience-item {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.experience-header h3 {
+    font-size: 1.4rem;
+    margin: 0 0 5px 0;
+}
+
+.experience-header h4 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.experience-date {
+    white-space: nowrap;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.experience-location {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 8px;
+}
+
+.experience-item ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* =================================
+   Mobile
+   ================================= */
+@media (max-width: 700px) {
+
+    .experience-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .experience-date {
+        white-space: normal;
+    }
+
+    .experience-section {
+        padding: 60px 20px;
+    }
+
 }
