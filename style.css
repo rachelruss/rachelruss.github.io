@@ -477,3 +477,31 @@ footer {
 .experience-description p {
     line-height: 1.6;
 }
+
+.research-image img {
+    width: 80%;
+    max-width: 350px;
+}
+
+/* =================================
+   Research Images
+   ================================= */
+
+.research-image {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.research-image img {
+    width: 35%;
+    max-width: 350px;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.image-caption {
+    margin-top: 8px;
+    color: #674ea7;
+    font-size: 0.9rem;
+}
